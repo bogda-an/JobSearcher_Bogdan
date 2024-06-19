@@ -1,0 +1,16 @@
+<form (ngSubmit)="applyForJob()">
+    <div>
+      <label for="userId">User ID</label>
+      <input id="userId" [(ngModel)]="application.userId" name="userId" required>
+    </div>
+    <div>
+      <label for="resume">Resume</label>
+      <textarea id="resume" [(ngModel)]="application.resume" name="resume" required></textarea>
+    </div>
+    <div>
+      <label for="additionalDetails">Additional Details</label>
+      <textarea id="additionalDetails" [(ngModel)]="application.additionalDetails" name="additionalDetails"></textarea>
+    </div>
+    <button type="submit">Apply for Job</button>
+  </form>
+  

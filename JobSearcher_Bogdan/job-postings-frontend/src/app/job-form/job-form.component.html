@@ -1,0 +1,50 @@
+<div class="create-job-container">
+  <h2 class="create-job-title">Create Job</h2>
+  <form (ngSubmit)="createJob()" class="create-job-form">
+    <div>
+      <label for="title">Title</label>
+      <input type="text" id="title" [(ngModel)]="job.title" name="title" required>
+    </div>
+    <div>
+      <label for="company">Company</label>
+      <input type="text" id="company" [(ngModel)]="job.company" name="company" required>
+    </div>
+    <div>
+      <label for="location">Location</label>
+      <input type="text" id="location" [(ngModel)]="job.location" name="location" required>
+    </div>
+    <div>
+      <label for="date_posted">Date Posted</label>
+      <input type="date" id="date_posted" [(ngModel)]="job.date_posted" name="date_posted" required>
+    </div>
+    <div>
+      <label for="employment_type">Employment Type</label>
+      <input type="text" id="employment_type" [(ngModel)]="job.employment_type" name="employment_type" required>
+    </div>
+    <div>
+      <label for="job_description">Job Description</label>
+      <input type="text" id="job_description" [(ngModel)]="job.job_description" name="job_description" required>
+    </div>
+    <div>
+      <label for="job_requirements">Job Requirements</label>
+      <input type="text" id="job_requirements" [(ngModel)]="job.job_requirements" name="job_requirements" required>
+    </div>
+    <div>
+      <label for="salary">Salary</label>
+      <input type="number" id="salary" [(ngModel)]="job.salary" name="salary" required>
+    </div>
+    <div>
+      <label for="industry">Industry</label>
+      <input type="text" id="industry" [(ngModel)]="job.industry" name="industry" required>
+    </div>
+    <div>
+      <label for="experience_level">Experience Level</label>
+      <input type="text" id="experience_level" [(ngModel)]="job.experience_level" name="experience_level" required>
+    </div>
+    <div>
+      <label for="job_link">Job Link</label>
+      <input type="text" id="job_link" [(ngModel)]="job.job_link" name="job_link" required>
+    </div>
+    <button type="submit">Create Job</button>
+  </form>
+</div>

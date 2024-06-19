@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngFor="let job of jobs" class="job-listing">
+    <h2 class="job-title">{{ job.title }}</h2>
+    <p class="job-company">{{ job.company_name || job.company }}</p>
+    <p class="job-location">{{ job.location }}</p>
+    <p class="job-date">{{ job.original_listed_time || date }}</p>
+    <p class="job-type">{{ job.formatted_work_type }}</p>
+    <p class="job-description">{{ job.description || job.job_description }}</p>
+    <p class="job-requirements">{{ job.job_requirements }}</p>
+    <p class="job-salary">{{ job.salary }}</p>
+    <p class="job-industry">{{ job.industry }}</p>
+    <p class="job-experience">{{ job.experience_level || job.formatted_experience_level }}</p>
+    <a [href]="job.job_link || job.job_posting_url" class="apply-link">Apply Here</a>
+    <button (click)="deleteJob(job._id)">Delete</button>
+    <button (click)="updateJob(job._id)">Update</button>
+  </div>
+</div>

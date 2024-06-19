@@ -1,0 +1,59 @@
+.create-job-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-job-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create-job-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-job-form div {
+  margin-bottom: 15px;
+}
+
+.create-job-form label {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.create-job-form input,
+.create-job-form textarea,
+.create-job-form select {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.create-job-form button {
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-job-form button:hover {
+  background-color: #0056b3;
+}

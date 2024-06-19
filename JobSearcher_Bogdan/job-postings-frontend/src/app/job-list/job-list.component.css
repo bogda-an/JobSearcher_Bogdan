@@ -1,0 +1,47 @@
+.job-listing {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.job-listing:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-company,
+.job-location,
+.job-date,
+.job-type,
+.job-salary,
+.job-industry,
+.job-experience {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.apply-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.apply-link:hover {
+  text-decoration: underline;
+}
